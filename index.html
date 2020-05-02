@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js-task-4</title>
-    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     
@@ -14,70 +15,69 @@
         <p>Hint: Kindly choose the most correct answer below and only one answer is to be selected.</p>
     </div>
 
-    <section id="qstn-1">
+    <section id="qstn1">
         <p><strong>Question 1:</strong> Which of this is a wild animal?</p>
-        <input type="radio" name="animal">Cockroach <br>
-        <input type="radio" name="animal">Rat <br>
-        <input type="radio" name="animal">Lion <br>
-        <input type="radio" name="animal">Lizard <br>
+        <div id="cockroach"><input type="radio" name="animal" onclick="checkAns1('cockroach')">Cockroach </div><br>
+        <div id="rat"><input type="radio" name="animal" onclick="checkAns1('rat')">Rat</div> <br>
+        <div id="lion"><input type="radio" name="animal" onclick="checkAns1('lion')">Lion </div><br>
+        <div id="lizard"><input type="radio" name="animal" onclick="checkAns1('lizard')">Lizard </div>
 
         <div>
-            <input type="text" name="" id="" value="0" disabled>
-            <button type="submit">Next</button>
+            <button type="submit" onclick="toNextQuestn('qstn1', 'qstn2')">Next</button>
         </div>
     </section>
 
-    <section id="qstn-2">
+    <section id="qstn2">
         <p><strong>Question 2:</strong> What is the shape of the earth?</p>
-        <input type="radio" name="shape">Triangle <br>
-        <input type="radio" name="shape">Rectangle <br>
-        <input type="radio" name="shape">Square <br>
-        <input type="radio" name="shape">Circle <br>
+        <div id="triangle"><input type="radio" name="shape" onclick="checkAns2('triangle')">Triangle </div><br>
+        <div id="rectangle"><input type="radio" name="shape" onclick="checkAns2('rectangle')">Rectangle </div><br>
+        <div id="square"><input type="radio" name="shape" onclick="checkAns2('square')">Square </div><br>
+        <div id="spherical"><input type="radio" name="shape" onclick="checkAns2('spherical')">Spherical </div><br>
 
         <div>
-            <button disabled="disabled">1</button>
-            <button type="submit">Next</button>
+            <button type="submit" onclick="toNextQuestn('qstn2', 'qstn3')">Next</button>
         </div>
     </section>
 
-    <section id="qsnt-3">
+    <section id="qstn3">
         <p><strong>Question 3:</strong> How many days makes up a week?</p>
-        <input type="radio" name="days">10 <br>
-        <input type="radio" name="days">4 <br>
-        <input type="radio" name="days">7 <br>
-        <input type="radio" name="days">11 <br>
+        <div id="10"><input type="radio" name="days" onclick="checkAns3(10)">10 </div><br>
+        <div id="4"><input type="radio" name="days" onclick="checkAns3(4)">4 </div><br>
+        <div id="7"><input type="radio" name="days" onclick="checkAns3(7)">7 </div><br>
+        <div id="11"><input type="radio" name="days" onclick="checkAns3(11)">11 </div><br>
 
         <div>
-            <button disabled="disabled">2</button>
-            <button type="submit">Next</button>
+            <button type="submit" onclick="toNextQuestn('qstn3', 'qstn4')">Next</button>
         </div>
     </section>
 
-    <section id="qstn-4">
+    <section id="qstn4">
        <p><strong>Question 4:</strong> An adult teeth is made up of?</p>
-        <input type="radio" name="teeth">32 <br>
-        <input type="radio" name="teeth">12 <br>
-        <input type="radio" name="teeth">100<br>
-        <input type="radio" name="teeth">40 <br>
+        <div id="32"><input type="radio" name="teeth" onclick="checkAns4(32)">32 </div><br>
+        <div id="12"><input type="radio" name="teeth" onclick="checkAns4(12)">12 </div><br>
+        <div id="100"><input type="radio" name="teeth" onclick="checkAns4(100)">100 </div><br>
+        <div id="40"><input type="radio" name="teeth" onclick="checkAns4(40)">40 </div><br>
 
         <div>
-            <button disabled="disabled">0</button>
-            <button type="submit">Next</button>
+            <button type="submit" onclick="toNextQuestn('qstn4', 'qstn5')">Next</button>
         </div>
     </section>
 
-    <section id="qstn-5">
+    <section id="qstn5">
         <p><strong>Question 5:</strong> What is the full meaning of HTML?</p>
-        <input type="radio" name="HTML">HyperText Markup Language<br>
-        <input type="radio" name="HTML">HyperText Makeup Language<br>
-        <input type="radio" name="HTML">HyperText Mockup Language<br>
-        <input type="radio" name="HTML">HyperType Markup Language<br>
+        <div id="hyperTextMarkupLanguage"><input type="radio" name="HTML" onclick="checkAns5('hyperTextMarkupLanguage')" >HyperText Markup Language </div><br>
+        <div id="hyperTextMakeupLanguage"><input type="radio" name="HTML" onclick="checkAns5('hyperTextMakeupLanguage')">HyperText Makeup Language </div><br>
+        <div id="hyperTextMockupLanguage"><input type="radio" name="HTML" onclick="checkAns5('hyperTextMockupLanguage')">HyperText Mockup Language </div><br>
+        <div id="hyperTypeMarkupLanguage"><input type="radio" name="HTML" onclick="checkAns5('hyperTypeMarkupLanguage')">HyperType MarkupLanguage </div><br>
 
         <div>
-            <button disabled="disabled">0</button>
-            <button type="submit">End Game</button>
+            <button type="submit" onclick="toNextQuestn(stop)">End Game</button>
         </div>
     </section>
+
+    <div class="scoreCounter">
+        <input type="text" name="score" value="0" id="scoreCounter" disabled>
+    </div>
 
     <div>
         <p>Thank you for Visiting</p>
