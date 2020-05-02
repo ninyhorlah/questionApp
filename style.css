@@ -1,7 +1,19 @@
-#qstn-1 {
+#qstn1 {
     display: block;
+    width: fit-content;
 }
 
-#qstn-2, #qstn-3, #qstn-4, #qstn-5 {
+#qstn2, #qstn3, #qstn4, #qstn5 {
     display: none;
+    width: fit-content;
 }
+
+/* #show {
+    display: block;
+    width: fit-content;
+}
+
+#hide {
+    display: none;
+    width: 100px;
+} */
