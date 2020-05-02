@@ -1,0 +1,7 @@
+#qstn-1 {
+    display: block;
+}
+
+#qstn-2, #qstn-3, #qstn-4, #qstn-5 {
+    display: none;
+}
