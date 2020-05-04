@@ -8,12 +8,69 @@
     width: fit-content;
 }
 
-/* #show {
-    display: block;
-    width: fit-content;
+body {
+    background-color: rgb(236, 233, 233);
+    background-image: url('./img/laptop4.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#hide {
-    display: none;
-    width: 100px;
-} */
+.inner {
+    font-size: 30px;
+    text-align: center;
+    color: honeydew;
+}
+
+input {
+    padding: 2px ;
+    border-radius: 10px;
+    
+}
+section {
+    margin: auto;
+    align-items: center;
+    
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(27, 236, 27);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: green;
+    color: honeydew;
+}
+
+
+section p {
+    border-radius: 5px;
+    padding: 5px 70px 70px 5px;
+    box-shadow: 0 0  8px grey;
+    background-color: honeydew;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -33px;
+}
+
+li div {
+    border-radius: 5px;
+    box-shadow: 0 0 8px grey;
+    padding: 5px 40px 40px 5px;
+    margin-right: 10px;
+    background-color: honeydew;
+    
+}
+
+.reset {
+    text-align: center;
+}

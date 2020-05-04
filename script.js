@@ -3,20 +3,8 @@ function toNextQuestn(currQuestn, nextQuestn) {
     document.getElementById(nextQuestn).style.cssText = "display: block";
 }
 
-// function toQstn3() {
-
-// }
-
-// function toQstn4() {
-
-// }
-
-// function toQstn5() {
-
-// }
-
-function endGameMsg() {
-
+function endGameMsg(input) {
+    alert('Thanks for playing, you scored a total of '+ document.getElementById('scoreCounter').value + ' out of 5.');
 }
 
 function checkAns1(input) {
@@ -72,16 +60,17 @@ function checkAns4(input) {
 }
 
 function checkAns5(input) {
-    //alert(input);
+    
     let correctAns = "hyperTextMarkupLanguage";
     let currScore = parseInt(document.getElementById('scoreCounter').value);
 
     if (input === correctAns) {
         document.getElementById(input).style.cssText = "background: green; color: white"
         document.getElementById('scoreCounter').value = currScore + 1;
-        alert('Thanks for playing, you scored a total of '+ document.getElementById('scoreCounter').value + ' out of 5.');
+        
     } else {
         document.getElementById(input).style.cssText = "background: red; color: white"
         document.getElementById(correctAns).style.cssText = "background: green;  color: white"
-    }
+    } 
+    
 }
